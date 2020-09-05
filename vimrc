@@ -7,7 +7,7 @@ set autoindent
 set hlsearch
 syntax enable
 
-set scrolloff=2
+set scrolloff=5
 set wrap
 
 set number
@@ -16,3 +16,4 @@ set relativenumber
 set noerrorbells
 
 set title
+set cursorline

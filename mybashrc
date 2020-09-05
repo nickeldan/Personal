@@ -1,0 +1,17 @@
+alias ll='ls -l'
+alias la='ls -lA'
+alias back='cd -'
+unalias l 2> /dev/null
+
+cl() {
+    cd $1 && ls -l
+}
+
+chat() {
+    echo "Did you mean 'cat'?"
+    false
+}
+
+if echo $PATH | grep -v $HOME/bin; then
+    export PATH=$PATH:$HOME/bin
+fi
