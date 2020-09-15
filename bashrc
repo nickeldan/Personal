@@ -1,5 +1,4 @@
 export PS1='\e[0;36m\u\e[m@\e[0;32m\h\e[m:\e[0;31m\w/\e[m $ '
-export CC=gcc
 if echo $PATH | grep -v $HOME/bin; then
     export PATH=$PATH:$HOME/bin
 fi
