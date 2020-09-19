@@ -1,12 +1,14 @@
 export PS1='\[\e[0;36m\]\u\[\e[m\]@\[\e[0;32m\]\h\[\e[m\]:\[\e[0;31m\]\w/\[\e[m\] $ '
+export EDITOR='vim'
 if echo $PATH | grep -v $HOME/bin; then
     export PATH=$PATH:$HOME/bin
 fi
 
 alias ll='ls -l'
+alias l='ls -l'
 alias la='ls -lA'
 alias back='cd - > /dev/null'
-unalias l 2> /dev/null
+alias up='cd ..'
 
 cl() {
     cd $1 && ls -l
