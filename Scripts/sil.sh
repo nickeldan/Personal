@@ -14,7 +14,7 @@ if [ "$1" = "-h" ]; then
 	exit 0
 fi
 
-if [[ ! -x $(which $1) ]]; then
+if [[ ! -x $1 ]] && [[ ! -x $(which $1) ]]; then
 	echo "'$1' is not executable."
 	exit 2
 fi
