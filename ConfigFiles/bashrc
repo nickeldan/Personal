@@ -9,6 +9,8 @@ alias l='ls -l'
 alias la='ls -lA'
 alias back='cd - > /dev/null'
 alias up='cd ..'
+alias gcc='gcc -fdiagnostics-color'
+alias ip='ip -c'
 
 cl() {
     cd $1 && ls -l
