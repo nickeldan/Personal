@@ -18,3 +18,4 @@ set noerrorbells
 set title
 set cursorline
 set ruler
+set cc=110
