@@ -11,6 +11,7 @@ alias back='cd - > /dev/null'
 alias up='cd ..'
 alias gcc='gcc -fdiagnostics-color'
 alias ip='ip -c'
+alias vi='vim'
 
 cl() {
     cd $1 && ls -l
