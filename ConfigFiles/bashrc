@@ -4,16 +4,17 @@ if echo $PATH | grep -v $HOME/bin; then
     export PATH=$PATH:$HOME/bin
 fi
 
-alias ll='ls -l'
-alias l='ls -l'
-alias la='ls -lA'
+alias ll='ls -l --color=auto'
+alias l='ls -l --color=auto'
+alias la='ls -lA --color=auto'
 alias back='cd - > /dev/null'
 alias up='cd ..'
-alias gcc='gcc -fdiagnostics-color'
+alias gcc='gcc -fdiagnostics-color -Wall -Wextra'
 alias ip='ip -c'
+alias vi='vim'
 
 cl() {
-    cd $1 && ls -l
+    cd $1 && ls -l --color=auto 
 }
 
 chat() {
