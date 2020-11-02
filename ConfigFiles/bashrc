@@ -1,14 +1,14 @@
 export PS1='\[\e[0;36m\]\u\[\e[m\]@\[\e[0;32m\]\h\[\e[m\]:\[\e[0;31m\]\w/\[\e[m\] $ '
 export EDITOR='vim'
-if echo $PATH | grep -v $HOME/bin; then
+if echo $PATH | grep -v $HOME/bin > /dev/null; then
     export PATH=$PATH:$HOME/bin
 fi
 
-alias ll='ls -l --color=auto'
-alias l='ls -l --color=auto'
-alias la='ls -lA --color=auto'
+alias l='ls -lF --color=auto'
+alias la='ls -lAF --color=auto'
 alias back='cd - > /dev/null'
 alias up='cd ..'
+alias upp='cd ../..'
 alias gcc='gcc -fdiagnostics-color -Wall -Wextra'
 alias ip='ip -c'
 alias vi='vim'
