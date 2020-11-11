@@ -4,14 +4,15 @@ if echo $PATH | grep -v $HOME/bin > /dev/null; then
     export PATH=$PATH:$HOME/bin
 fi
 
-alias l='ls -lF --color=auto'
-alias la='ls -lAF --color=auto'
+alias l='ls -l --color=auto'
+alias la='ls -lA --color=auto'
 alias back='cd - > /dev/null'
 alias up='cd ..'
 alias upp='cd ../..'
 alias gcc='gcc -fdiagnostics-color -Wall -Wextra'
 alias ip='ip -c'
 alias vi='vim'
+alias pip='pip3'
 
 cl() {
     cd $1 && ls -l --color=auto 
