@@ -8,8 +8,14 @@ for directory in $HOME/bin $HOME/.local/bin; do
 done
 export PATH
 
-alias l='ls -l --color=auto'
-alias la='ls -lA --color=auto'
+if ls --color=auto . > /dev/null 2>&1; then
+    ls_color_option='--color=auto'
+elif ls -G . > /dev/null 2>&1; then
+    ls_color_option='-G'
+fi
+
+alias l="ls -l $ls_color_option"
+alias la="ls -lA $ls_color_option"
 alias back='cd - > /dev/null'
 alias up='cd ..'
 alias upp='cd ../..'
@@ -19,7 +25,7 @@ alias vi='vim'
 alias pip='pip3'
 
 cl() {
-    cd $1 && ls -l --color=auto 
+    cd $1 && ls -l $ls_color_option
 }
 
 chat() {
