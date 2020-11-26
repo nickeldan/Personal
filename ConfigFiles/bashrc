@@ -19,7 +19,7 @@ alias la="ls -lA $ls_color_option"
 alias back='cd - > /dev/null'
 alias up='cd ..'
 alias upp='cd ../..'
-alias gcc='gcc -fdiagnostics-color -Wall -Wextra'
+alias gcc='gcc -std=gnu11 -fdiagnostics-color -Wall -Wextra'
 alias ip='ip -c'
 alias vi='vim'
 alias pip='pip3'

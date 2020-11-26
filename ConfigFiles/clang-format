@@ -8,6 +8,15 @@ AllowShortFunctionsOnASingleLine: None
 AllowShortIfStatementsOnASingleLine: Never
 AllowShortLoopsOnASingleLine: false
 AlwaysBreakAfterReturnType: All
+BraceWrapping:
+  AfterCaseLabel:  false
+  AfterEnum:       false
+  AfterFunction:   true
+  AfterStruct:     false
+  AfterUnion:      false
+  BeforeElse:      true
+  IndentBraces:    false
+BreakBeforeBraces: Custom
 BreakBeforeTernaryOperators: false
 ColumnLimit: 109
 DerivePointerAlignment: false
@@ -15,3 +24,4 @@ IncludeBlocks: Preserve
 IndentCaseLabels: false
 IndentGotoLabels: false
 IndentWidth: 4
+PointerAlignment: Right
