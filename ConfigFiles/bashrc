@@ -8,9 +8,9 @@ for directory in $HOME/bin $HOME/.local/bin; do
 done
 export PATH
 
-if ls --color=auto . > /dev/null 2>&1; then
+if ls --color=auto > /dev/null 2>&1; then
     ls_color_option='--color=auto'
-elif ls -G . > /dev/null 2>&1; then
+elif ls -G > /dev/null 2>&1; then
     ls_color_option='-G'
 fi
 
