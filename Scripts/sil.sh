@@ -9,12 +9,12 @@ if [ $# -eq 0 ]; then
 	exit 1
 fi
 
-if [ "$1" = "-h" ]; then
+if [ "$1" == "-h" ]; then
 	usage
 	exit 0
 fi
 
-if [[ ! -x $1 ]] && [[ ! -x $(which $1) ]]; then
+if [ ! -x $1 ] && [ ! -x $(which $1) ]; then
 	echo "'$1' is not executable."
 	exit 2
 fi
