@@ -25,3 +25,4 @@ IndentCaseLabels: false
 IndentGotoLabels: false
 IndentWidth: 4
 PointerAlignment: Right
+SortIncludes: true
