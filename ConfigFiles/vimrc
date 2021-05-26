@@ -19,3 +19,6 @@ set title
 set cursorline
 set ruler
 set cc=110
+
+nnoremap <C-b> :%!black -l 110 - 2> /dev/null<CR>
+nnoremap <C-c> :%!clang-format - 2> /dev/null<CR>

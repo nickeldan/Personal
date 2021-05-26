@@ -3,6 +3,8 @@ green='\[\e[0;32m\]'
 red='\[\e[0;31m\]'
 reset='\[\e[m\]'
 
+shopt -s globstar
+
 export PS1="$teal\u$reset@$green\h$reset:$red\w$reset $ "
 export EDITOR='vim'
 
@@ -29,6 +31,7 @@ alias gcc='gcc -std=gnu11 -fdiagnostics-color -Wall -Wextra'
 alias ip='ip -c'
 alias vi='vim'
 alias pip='pip3'
+alias black='black -l 110'
 
 cl() {
     cd $1 && ls -l $ls_color_option
@@ -37,4 +40,8 @@ cl() {
 chat() {
     echo "Did you mean 'cat'?"
     false
+}
+
+sudoln() {
+    sudo bash -c "$*"
 }
