@@ -16,6 +16,10 @@ if [ $# -eq 0 ]; then
     flake8_cmd $files
 else
     filename=$1
+    if [ ! -f $filename ]; then
+        echo "$filename is not a regular file"
+        exit 1
+    fi
     black_cmd $filename
     flake8_cmd $filename
 fi
