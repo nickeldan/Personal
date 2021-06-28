@@ -3,7 +3,7 @@ green='\[\e[0;32m\]'
 red='\[\e[0;31m\]'
 reset='\[\e[m\]'
 
-shopt -s globstar
+shopt -s globstar 2> /dev/null || true
 
 export PS1="$teal\u$reset@$green\h$reset:$red\w$reset $ "
 export EDITOR='vim'
@@ -30,7 +30,8 @@ alias uppp='cd ../../..'
 alias gcc='gcc -std=gnu11 -fdiagnostics-color -Wall -Wextra'
 alias ip='ip -c'
 alias vi='vim'
-alias pip='pip3'
+alias pip='python3 -m pip'
+alias pip3='python3 -m pip'
 alias black='black -l 110'
 
 cl() {
